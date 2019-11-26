@@ -1,3 +1,122 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+$main-text-color: #E3B873;
+$header-indent: 18px;
+$regular: 'Roboto Regular';
+
+.header-info h1,
+.header-info p,
+.header-list,
+input[type=button] {
+  padding: 0 $header-indent;
+  color: #fff;
+}
+
+.header-list {
+  display: inherit;
+  flex-direction: row;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+}
+
+.wrapper-header {
+  min-width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/src/assets/image/headerimage.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 55px;
+
+  .header-instagram,
+  .nav,
+  .header-list--item-button input[type=button],
+  .header-link-text,
+  .header-scroll {
+    display: none;
+  }
+
+  .header-list--item {
+    &-ic,
+    &-tel {
+      height: 57px;
+      display: flex;
+      align-items: center;
+      font-family: $regular, sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+
+    }
+
+    &-tel {
+      margin-left: auto;
+    }
+  }
+
+  .header-list--item-tel {
+    a:hover {
+      color: $main-text-color;
+    }
+  }
+
+  .header-list--item-ic,
+  .h1-text {
+    color: $main-text-color;
+  }
+
+  .header-info {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+
+    h1 {
+      font-family: 'Yeseva One';
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-family: 'Roboto Light';
+      font-size: 1rem;
+    }
+
+    a.header-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+
+      &:hover {
+        color: $main-text-color;
+        border-color: $main-text-color;
+      }
+    }
+
+    input[type=button] {
+      width: 338.5px;
+      background: none;
+      border: none;
+      background-color: $main-text-color;
+      
+      &:hover {
+        background-color: rgb(192, 142, 60);
+      }
+    }
+
+    a.header-link,
+    input[type=button] {
+      margin: 0 $header-indent;
+      width: 338.5px;
+      height: 51px;
+      font-family: $regular;
+      font-size: .8rem;
+      text-transform: uppercase;
+    }
+  }
+}

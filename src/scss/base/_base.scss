@@ -25,11 +25,21 @@
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: #ffffff;
   text-decoration: none;
+}
 
+input[type=button] {
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type=button],
+a {
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: -2px 18px 21px -8px rgba(0,0,0,0.75);
   }
 }

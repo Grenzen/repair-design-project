@@ -8,7 +8,8 @@
 
 // 2. Vendors
 @import
-  'vendors/normalize';
+  'vendors/normalize',
+  'vendors/reset';
 
 // 3. Base
 @import
@@ -24,11 +25,13 @@
 
 // 5. Components
 @import
-  "components/button";
+  "components/button",
+  "components/slider";
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/completed';
 
 // 7. Themes
 @import
