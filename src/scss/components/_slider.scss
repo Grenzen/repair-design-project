@@ -1,4 +1,43 @@
 .slider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  margin: 0 auto;
   min-width: 340px;
+  max-width: 680px;
   min-height: 242px;
+  max-height: 484px;
+  margin-bottom: 30px;
+
+  &::before,
+  &::after {
+    position: sticky;
+    height: 30px;
+    top: 40%;
+    margin-left: -30px;
+    color: $light-grey;
+    background-color: $brand-color;
+    padding: 0px 11px;
+    border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  &::before {
+    content: '\2039';
+    left: 2vw;
+  }
+
+  &::after {
+    content: '\203A';
+    right: 2vw;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

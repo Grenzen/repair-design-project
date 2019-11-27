@@ -25,13 +25,15 @@
 
 // 5. Components
 @import
-  "components/button",
-  "components/slider";
+  'components/button',
+  'components/slider',
+  'components/rubrics';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/completed';
+  'pages/completed',
+  'pages/online';
 
 // 7. Themes
 @import
