@@ -1,0 +1,138 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the submit form component.
+// -----------------------------------------------------------------------------
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+// @mixin transition {
+//   &:-webkit-transition { @content; }
+//   &:-moz-transition { @content; }
+//   &:-o-transition { @content; }
+// }
+
+.wrapper-submitform {
+  padding: 20px 15px;
+  background-color: $background-color;
+
+  .phone {
+    padding-top: 30px;
+  }
+
+  input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $light-grey;
+    color: $light-grey;
+    font-family: "Roboto Light";
+    font-size: .8rem;
+    outline: none;
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
+
+    &[type=text],
+    &[type=tel] {
+      width: 100%;
+      background: none;
+    }
+
+
+
+    @include placeholder {
+      color: $light-grey;
+      font-size: 0.8rem;
+      letter-spacing: .1em;
+    }
+  }
+
+  .agreements {
+    padding-top: 20px;
+
+    input {
+      color: $light-grey;
+      background-color: $brand-color;
+
+      &:checked,
+      &:not(:checked) {
+        position: absolute;
+        left: -9999px;
+
+        + label {
+          padding-left: 30px;
+          vertical-align: super;
+          cursor: pointer;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 4vw;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $light-grey;
+          }
+
+          &::after {
+            content: "\2713";
+            position: absolute;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            left: 5vw;
+            background-color: $brand-color;
+            padding: 1px 4px;
+            margin-left: -1vw;
+          }
+        }
+      }
+
+      &:not(:checked) + label:after {
+        opacity: 0;
+      }
+
+      &:checked + label:after {
+        opacity: 1;
+      }
+    }
+    label {
+      color: $light-grey;
+      font-family: "Roboto Light";
+      font-size: .8rem;
+    }
+  }
+
+  label {
+    font-size: 0.7rem;
+    font-family: "Roboto Light";
+    color: $mid-grey;
+  }
+
+  .submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $brand-color;
+    height: 50px;
+    position: relative;
+    top: 40px;
+    max-width: 340px;
+    width: 98%;
+    margin: 0 3px;
+
+    input {
+      text-transform: uppercase;
+      font-family: "Roboto Bold";
+      border-bottom: none;
+    }
+  }
+}
