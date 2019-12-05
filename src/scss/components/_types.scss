@@ -1,0 +1,58 @@
+.type-items-container {
+  width: 100%;
+  margin-top: 40px;
+
+  .type-item {
+    height: 484px;
+    margin-bottom: 60px;
+
+    img {
+      width: 100%;
+    }
+
+    .item-list {
+      padding-top: 19px;
+      position: relative;
+      top: -135px;
+      min-width: 270px;
+      max-width: 330px;
+      width: 78%;
+      background-color: #FFFFFF;
+      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+
+      h3 {
+        padding: 0 36px 4px 36px;
+        font-size: 1rem;
+        color: #363636;
+      }
+
+      ul {
+        padding: 0 55px;
+        list-style-type: disc;
+      }
+
+      ul > li {
+        font-size: 0.7rem;
+        font-family: "Roboto Light";
+        line-height: 21px;
+        color: #959595;
+      }
+
+      p {
+        position: relative;
+        top: 20px;
+        padding: 10px 0;
+        text-align: center;
+        width: 70%;
+        min-width: 190px;
+        max-width: 228px;
+        font-family: "Yeseva One";
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: $brand-color;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+      }
+    }
+  }
+}

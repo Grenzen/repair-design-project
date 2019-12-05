@@ -28,13 +28,19 @@
   'components/button',
   'components/slider',
   'components/rubrics',
-  'components/submit';
+  'components/submit',
+  'components/imgContainer',
+  'components/types',
+  'components/articles';
 
 // 6. Page-specific styles
 @import
   'pages/home',
   'pages/completed',
-  'pages/online';
+  'pages/online',
+  'pages/typesOfRepair',
+  'pages/wildestFantasies',
+  'pages/designProjects';
 
 // 7. Themes
 @import

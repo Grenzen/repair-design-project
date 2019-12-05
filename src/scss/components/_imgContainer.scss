@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the small ing component.
+// -----------------------------------------------------------------------------
+
+.img-container {
+
+  &::before,
+  &::after {
+    content: '____';
+    color: $brand-color;
+    vertical-align: super;
+  }
+  
+  img {
+    margin-top: 15px;
+    vertical-align: bottom;
+    width: 28px;
+  }
+}

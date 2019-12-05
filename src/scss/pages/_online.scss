@@ -14,20 +14,8 @@
     color: $light-grey;
   }
 
-  .img-container {
-
-    &::before,
-    &::after {
-      content: '____';
-      color: $brand-color;
-      vertical-align: super;
-    }
-    
-    img {
-      margin-top: 30px;
-      vertical-align: bottom;
-      width: 32px;
-    }
+  img {
+    width: 32px;
   }
 
   .embed-container {
@@ -46,14 +34,6 @@
   }
 
   article {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: $light-grey;
-    font-family: 'Roboto Light';
-    font-size: .8rem;
-    line-height: 1.8;
-
     &::before {
       content: '';
       color: $brand-color;

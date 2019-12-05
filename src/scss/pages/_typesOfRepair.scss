@@ -1,0 +1,15 @@
+  
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the Types of Repair parts.
+// -----------------------------------------------------------------------------
+
+.wrapper-types-of-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  
+  h2 {
+    margin-top: 65px;
+  }
+}

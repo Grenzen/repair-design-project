@@ -134,5 +134,9 @@
       font-family: "Roboto Bold";
       border-bottom: none;
     }
+
+    &:hover {
+      background-color: rgb(192, 142, 60);
+    }
   }
 }

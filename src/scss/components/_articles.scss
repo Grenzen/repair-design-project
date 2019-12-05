@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the article component.
+// -----------------------------------------------------------------------------
+
+article,
+.inform-item p {
+  display: flex;
+  flex-direction: column;
+  color: $light-grey;
+  font-family: 'Roboto Light';
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+article {
+  text-align: center;
+}

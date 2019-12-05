@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the Wildest Fantasies parts.
+// -----------------------------------------------------------------------------
+
+.wrapper-design-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  background-color: $background-color;
+
+  h2 {
+    color: $light-grey;
+  }
+
+  article {
+    margin: 23px 0 39px 0;
+  }
+
+  .type-items-container {
+    margin-top: 0;
+
+    .type-item.mini {
+      height: 420px;
+
+      .item-list.mini-list {
+        height: 177px;
+      }
+    }
+  }
+}
